@@ -4,15 +4,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Registration Form</title>
+    <style>
+        input   {
+            background-color: lightsteelblue;
+        }
+        ::placeholder   {
+            color: dimgray;
+        }
+    </style>
 </head>
 <body>
     <header>
-        <h2>
+        <h1>
             Registration Form
-        </h2>
+        </h1>
         <form action="">
             <label for="firstname">Firstname</label>
-            <input type="text" id="firstname" name="firstname" placeholder="John">
+            <input type="text" id="firstname" name="firstname" placeholder="John" color="lightblue">
             <br>
             <br>
             <label for="lastname">Lastname</label>
@@ -30,12 +38,48 @@
             <p>
                 Gender:
                 <br>
-                <input type="radio" id="male" name="Gender" value="male">
+                <input type="radio" id="male" name="Gender" value="male" checked>
                 <label for="male">Male</label>
                 <br>
                 <input type="radio" id="female" name="Gender" value="female">
                 <label for="female">Female</label>
             </p>
+            <p>
+                Hobbies:
+                <br>
+                <input type="checkbox" id="programming" name="Hobbies" value="programming" checked>
+                <label for="programming">Programming</label>
+                <br>
+                <input type="checkbox" id="basketball" name="Hobbies" value="basketball" checked>
+                <label for="basketball">Basketball</label>
+                <br>
+                <input type="checkbox" id="football" name="Hobbies" value="football">
+                <label for="football">Football</label>
+                <br>
+                <input type="checkbox" id="readingNovel" name="Hobbies" value="readingNovel">
+                <label for="readingNovel">Reading Novel</label>
+            </p>
+            <p>
+                <label for="phone">Phone:</label>
+                <input type="tel" id="phone" name="phone" placeholder="004312345678912">
+            </p>
+            <p>
+                <label for="address">Address:</label>
+                <br>
+                <textarea name="address" id="adress" rows="7" cols="40">Schützenstraße 30,  6523,Vienna, Austria</textarea>
+            </p>
+            <p>
+                <label for="email">Email:</label>
+                <input type="email" name="email" id="email" placeholder="johndoe@example.com">
+            </p>
+            <p>
+                <label for="password">Password:</label>
+                <input type="password" name="password" id="password" placeholder="••••••••">
+            </p>
+            <br>
+            <br>
+            <button type="submit">Submit</button>
+            <button type="reset">Reset</button>
         </form>
     </header>
 </body>
