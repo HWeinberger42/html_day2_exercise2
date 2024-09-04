@@ -3,9 +3,40 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Registration Form</title>
 </head>
 <body>
-    
+    <header>
+        <h2>
+            Registration Form
+        </h2>
+        <form action="">
+            <label for="firstname">Firstname</label>
+            <input type="text" id="firstname" name="firstname" placeholder="John">
+            <br>
+            <br>
+            <label for="lastname">Lastname</label>
+            <input type="text" id="lastname" name="lastname" placeholder="Doe">
+            <br>
+            <br>
+            <label for="course">Course</label>
+            <select name="course" id="course">
+                <option value="html">HTML</option>
+                <option value="frontend">FrontEnd</option>
+                <option value="database">Database</option>
+                <option value="backend">BackEnd</option>
+            </select>
+            <br>
+            <p>
+                Gender:
+                <br>
+                <input type="radio" id="male" name="Gender" value="male">
+                <label for="male">Male</label>
+                <br>
+                <input type="radio" id="female" name="Gender" value="female">
+                <label for="female">Female</label>
+            </p>
+        </form>
+    </header>
 </body>
 </html>
